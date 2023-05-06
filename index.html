@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="articulo-a">
+        <img class="logo" src="./assets/img/Logo.png" alt="logo" />
+        <input
+          class="campo-a color-text-a"
+          id="campoTexto"
+          type="text"
+          placeholder="Ingrese el texto aqui"
+        />
+        <div class="atencion">
+          <img
+            class="icon"
+            src="./assets/img/circulo-atencion.png"
+            alt="icono atencion"
+          />
+          <label class="label-text" for=""
+            >solo letras minusculas y sin acentos</label
+          >
+        </div>
+        <div class="botom-style">
+          <button class="botom-En" id="botonEncriptado" onclick="btnEncrip()">
+            Encriptar
+          </button>
+          <button
+            class="botom-Des"
+            id="botonDesencriptado"
+            onclick="btnDesencri()"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="articulo-b" >
+        <div class="box-grupo-1">
+        <img class="img-articulo-b" src="./assets/img/Muñeco.png" alt="" />
+        <p class="text-style-a">Ningun mensaje fue encontrado</p>
+        <p class="text-style-b">ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        <div class="ocultar" >
+            <textarea
+              name="Ingresa el texto que desees encriptar o desencriptar"
+              id="textoModificado"
+              class="textarea-style"
+              cols="25"
+              rows="10"
+              type="text"
+
+            ></textarea>
+            <button class="botom-Copi" id="botonCopiar" onclick="copy()" >Copiar</button>
+          </div>
+      </div>
+    </section>
+
+
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+  </body>
+</html>
